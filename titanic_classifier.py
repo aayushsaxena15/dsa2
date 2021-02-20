@@ -168,6 +168,7 @@ def titanic_lightgbm() :
 
     ##### Filling Global parameters    ############################################################
     model_dict        = global_pars_update(model_dict, data_name, config_name=os_get_function_name() )
+    print("checking model parameters: " + str(model_dict))
     return model_dict
 
 
