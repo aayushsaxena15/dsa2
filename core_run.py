@@ -211,7 +211,7 @@ def hyperparam_wrapper(config_full="",
 
         # print(ddict['stats']['metrics_test'].to_dict('records')[0])
         ddict['stats'][metric_name] = ddict['stats']['metrics_test'].to_dict('records')[0]['metric_val']
-        print("accuracy: " + str(ddict['stats'][metric_name]))
+        print("accuracy for model: " + str(ddict['stats'][metric_name]))
         if debug : print(ddict)
         res = ddict['stats'][metric_name]
         return res
